@@ -4,11 +4,86 @@
   <title>Bat Ball Stump Game</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<h1>hello</h1>
 
 <body>
+  <h1>Bat Ball Stump Game</h1>
 
+  <button id="Bat" onclick="let randomNumber = Math.random() * 3;
+    let computerChoice;
+    if(randomNumber > 0 && randomNumber <=1){
+      computerChoice = 'bat';
+    }
+    else if(randomNumber > 1 && randomNumber <=2){
+      computerChoice = 'ball';
+    }
+    else{
+      computerChoice = 'Stump';
+    }
+    
+    let resultMsg;
+    if (computerChoice == 'ball'){
+      resultMsg ='You won.';
+    }
+    else if(computerChoice == 'bat'){
+      resultMsg ='It\'s a tie';
+    }
+    else if(computerChoice == 'Stump'){
+      resultMsg ='Computer is won.';
+    }
+
+    alert('You chose bat. Computer Choice is ' + computerChoice + ' and ' + resultMsg);">Bat</button>
+
+  <button id="Ball" onclick="let randomNumber = Math.random() * 3;
+    let computerChoice;
+    if(randomNumber > 0 && randomNumber <=1){
+      computerChoice = 'bat';
+    }
+    else if(randomNumber > 1 && randomNumber <=2){
+      computerChoice = 'ball';
+    }
+    else{
+      computerChoice = 'Stump';
+    }
+    
+    let resultMsg;
+    if (computerChoice == 'ball'){
+      resultMsg='It\'s a tie';
+    }
+    else if(computerChoice == 'bat'){
+      resultMsg ='Computer is won';
+    }
+    else if(computerChoice == 'Stump'){
+      resultMsg ='User won.';
+    }
+
+    alert('You chose ball. Computer Choice is ' + computerChoice + ' and ' + resultMsg);">Ball</button>
+
+  <button id="Stump" onclick="let randomNumber = Math.random() * 3;
+    let computerChoice;
+    if(randomNumber > 0 && randomNumber <=1){
+      computerChoice = 'bat';
+    }
+    else if(randomNumber > 1 && randomNumber <=2){
+      computerChoice = 'ball';
+    }
+    else{
+      computerChoice = 'Stump';
+    }
+    
+    let resultMsg;
+    if (computerChoice == 'ball'){
+      resultMsg ='Computer is won';
+    }
+    else if(computerChoice == 'bat'){
+      resultMsg ='Computer is won';
+    }
+    else if(computerChoice == 'Stump'){
+      resultMsg ='It\'s a tie';
+    }
+
+    alert('You chose stump. Computer Choice is ' + computerChoice + ' and ' + resultMsg);">Stump</button>
+
+  <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 
 </html>

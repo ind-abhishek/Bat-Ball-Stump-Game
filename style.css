@@ -1,3 +1,18 @@
 body{
   text-align: center;
 }
+
+.choise-image{
+  height: 75px;
+    width: auto;
+}
+
+.choise-btn{
+  height: 100px;
+  width: 90px;
+  border: none;
+  margin: 10px;
+  background-color: rgba(124, 178, 17, 0.317);
+  border-radius: 50px;
+  cursor: pointer;
+}
